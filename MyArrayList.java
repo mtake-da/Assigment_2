@@ -1,6 +1,6 @@
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.Arrays;
 
 public class MyArrayList<T> implements MyList<T> {
 
@@ -53,13 +53,13 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public T getFirst() {
-        if (size == 0) throw new IllegalStateException("list is empty");
+        if (size == 0) throw new IllegalStateException("List is empty");
         return get(0);
     }
 
     @Override
     public T getLast() {
-        if (size == 0) throw new IllegalStateException("list is empty");
+        if (size == 0) throw new IllegalStateException("List is empty");
         return get(size - 1);
     }
 
@@ -75,13 +75,13 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public void removeFirst() {
-        if (size == 0) throw new IllegalStateException("list is empty");
+        if (size == 0) throw new IllegalStateException("List is empty");
         remove(0);
     }
 
     @Override
     public void removeLast() {
-        if (size == 0) throw new IllegalStateException("list is empty");
+        if (size == 0) throw new IllegalStateException("List is empty");
         remove(size - 1);
     }
 
